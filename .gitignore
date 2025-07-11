@@ -1,0 +1,14 @@
+# Ignore airflow logs, data files, Python cache, environment files
+logs/
+**/logs/
+*.log
+__pycache__/
+.env
+.env.local
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.egg-info/
+.DS_Store
