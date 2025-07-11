@@ -9,7 +9,7 @@ engine = create_engine("postgresql://airflow:airflow@localhost:5432/airflow")
 pdf=pd.read_sql("SELECT * FROM fact_orders", engine)
 
 df=ge.dataset.PandasDataset(pdf)
-# Define expectations
+
 results = df.validate(
     expectation_suite={
         "expectations": [
