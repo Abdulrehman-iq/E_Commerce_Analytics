@@ -12,8 +12,8 @@ default_args = {
 }
 
 def run_spark_job():
-    import subprocess
-    subprocess.run(["spark-submit", "/app/batch_processing/spark_etl.py"], check=True)
+        import subprocess
+        subprocess.run(["spark-submit", "/app/batch_processing/spark_etl.py"], check=True)
 
 with DAG(
     'ecom_batch_pipeline',
